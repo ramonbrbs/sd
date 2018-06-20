@@ -4,6 +4,7 @@
 public class No {
     private String ip;
     private int porta;
+    private boolean mark = false;
 
     public No(String ip, int porta){
         this.ip=ip;
@@ -24,5 +25,13 @@ public class No {
 
     public void setPorta(int porta) {
         this.porta = porta;
+    }
+
+    public boolean isMark() {
+        return mark;
+    }
+
+    public void setMark(boolean mark) {
+        this.mark = mark;
     }
 }
